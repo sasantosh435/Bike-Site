@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Honda</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Ho</span>n <span>d</span>a</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="./Login/signin.html" data-after="Sign in">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <a href="#testdrive" type="button" class="cta">Test Drive</a>
+        <a href="booknow.html" type="button" class="cta">Book Now</a>
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+<br>
+<br>
+ 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Ho</span>nda</h1>
+      </div>
+      <img src="img/Honda.jpg" alt="ktm" style="width:428px;height:308px;">
+
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h2></h2>
+            <p> Honda CBR650F Launched in India at INR 7.30 Lakh; Bookings, Specs, Features, Colour, Images. Priced at INR 7.30 lakh (ex-showroom Delhi), the new Honda CBR 650F motorcycle will compete against the likes of Kawasaki Ninja 650, Benelli TNT 600GT and others in the segment.Honda CBR 650R is a sports bike available at a starting price of Rs. 8,94,674 in India. It is available in only 1 variant and 2 colours.</p>
+        </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="section-title"><span>S</span>pecs</h1>
+      <table>
+        <tr>
+           <th>Mileage (City)</th>
+              <th>32.46 kmpl</th>
+        </tr>
+        <tr>
+           <th>Engine Type</th>
+           <th>4 Stroke, SI Engine</th>
+        </tr>
+        <tr>
+           <th>Max Power</th>
+           <th>87.01 PS @ 12000 rpm</th>
+        </tr>
+        <tr>
+           <th>Front Brake, Rear Brake </th>
+           <th>Disc</th>
+        </tr>
+        <tr>
+           <th>Fuel Capacity</th>
+           <th>15.4 Ltrs</th>
+        </tr>
+        <tr>
+          <th>Displacement</th>
+          <th>648.72 cc</th>
+        </tr>
+        <tr>
+          <th>Max Torque</th>
+          <th>57.5 Nm @ 8500 rpm</th>
+        </tr>
+     </table>
+<br> <br>
+     <section id="testdrive">
+      <h1 class="section-title"><span>Test</span>Drive</h1>
+      <div class="testdrive">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="lname">Mobile Number</label>
+           <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+           <label for="email">Email Address</label> <br>
+           <input type="text" id="email" name="email" placeholder="your email address">
+       <br>
+       <p>Please select your bike:</p>
+         <input type="radio" id="cbr150" name="area" value="CBR150">
+         <label for="cbr150">CBR150</label><br>
+         <input type="radio" id="cbr250" name="area" value="CBR250">
+         <label for="cbr250">CBR250</label><br>
+         <input type="radio" id="cbr1000" name="area" value="CBR1000">
+         <label for="cbr1000">CBR1000</label>
+       <br>
+       <p>Select your area:</p>
+       <select id="Honda" name="bike">
+         <option value="area">Anna Nagar</option>
+         <option value="area">Arumbakkam</option>
+         <option value="area">Ambattur</option>
+         <option value="area">Kodambakkam</option>
+         <option value="area">Nungambakkam</option>
+         <option value="area">T.Nagar</option>
+         <option value="area">Guindy</option>
+         <option value="area">Tambaram</option>
+         <option value="area">Vadapalani</option>
+         <option value="area">Porur</option>
+         <option value="area">Poonamalle</option>
+         <option value="area">Royapuram</option>
+       </select>
+      <br> <br>
+        <button onclick="myFunction()">Submit</button>
+  
+        <p id="demo"></p>
+        
+        <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Are you sure want to book a test drive!")) {
+            txt = "You have successfully booked your test drive. We will Contact you soon!";
+          } else {
+            txt = "You have Canceled your test drive!";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+      </form>
+    </div>
+    </section>
+     
+  <!-- End Contact Section -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

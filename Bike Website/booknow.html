@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Book Now</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>Book</span>Your<span>favourite</span>Bike</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="index.html" data-after="Home">Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+<br>
+      <img src="img/bike.jpg" alt="bike" style="width:428px;height:308px"; class=center>
+<section id="testdrive">
+    <div class="testdrive">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     
+         <label for="lname">Last Name</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+         <label for="lname">Mobile Number</label>
+         <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+         <label for="email">Email Address</label> <br>
+         <input type="text" id="email" name="email" placeholder="your email address">
+     <br>
+    
+     <p>Select your area:</p>
+     <select id="booknow" name="bike">
+       <option value="area">BMW</option>
+       <option value="area">Yamaha</option>
+       <option value="area">Honda</option>
+       <option value="area">KTM</option>
+       <option value="area">Royal Enfield</option>
+     </select>
+    <br>
+    <p>Payment Option:</p>
+      <input type="radio" id="card" name="area" value="Card">
+      <label for="card">Card</label><br>
+      <input type="radio" id="netbanking" name="area" value="Net Banking">
+      <label for="netbanking">Net Banking</label><br>
+      <input type="radio" id="upi" name="area" value="UPI">
+      <label for="upi">UPI</label>
+    <br> <br>
+      <button onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Payment Sucessful!")) {
+          txt = "You have successfully booked your bike. We will Contact you soon!";
+        } else {
+          txt = "You have Canceled  bike!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+    </form>
+  </div>
+  </section>
+</body>

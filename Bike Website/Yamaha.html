@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Yamaha</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Ya</span>m<span>a</span>ha</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="./Login/signin.html" data-after="Sign in">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Welcome to Bike Site <span></span></h1>
+        <a href="#testdrive" type="button" class="cta">Test Drive</a>
+        <a href="booknow.html" type="button" class="cta">Book Now</a>
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+<br>
+<br>
+ 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Yam</span>aha</h1>
+      </div>
+      <img src="img/Yamaha.jpg" alt="ktm" style="width:428px;height:308px;">
+
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h2>Revs your Heart</h2>
+            <p>The Yamaha YZF-R3 is a very good choice for beginner riders as the bike is lightweight making it super easy to handle. Although it is a smaller bike its advanced forged piston design borrowed from its big brother the R6 still gives this bike a lot of power but the power that will not “run away” from you.The new R3 doesn't come with slipper clutch. However it has newly developed 320.6cc, liquid-cooled, 4-stroke, in-line 2-cylinder, DOHC, 4-valve fuel-injected engine that achieves the model's concept is adopted. This engine generates its maximum power output at 10,750 rpm and maximum torque at 9,000 rpm.</p>
+        </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="section-title"><span>S</span>pecs</h1>
+      <table>
+        <tr>
+           <th>Mileage (City)</th>
+              <th>35 kmpl</th>
+        </tr>
+        <tr>
+           <th>Engine Type</th>
+           <th>Liquid cooled, 4-stroke, 4-valve, DOHC Engine</th>
+        </tr>
+        <tr>
+           <th>Max Power</th>
+           <th>42 PS @ 10750 rpm</th>
+        </tr>
+        <tr>
+           <th>Front Brake, Rear Brake </th>
+           <th>Disc</th>
+        </tr>
+        <tr>
+           <th>Fuel Capacity</th>
+           <th>14 Ltrs</th>
+        </tr>
+        <tr>
+          <th>Displacement</th>
+          <th>321cc</th>
+        </tr>
+        <tr>
+          <th>Max Torque</th>
+          <th>29.6 Nm @ 9000 rpm</th>
+        </tr>
+     </table>
+<br> <br>
+     <section id="testdrive">
+      <h1 class="section-title"><span>Test</span>Drive</h1>
+      <div class="container4">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="lname">Mobile Number</label>
+           <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+           <label for="email">Email Address</label> <br>
+           <input type="text" id="email" name="email" placeholder="your email address">
+       <br>
+       <p>Please select your bike:</p>
+         <input type="radio" id="r15" name="area" value="R15">
+         <label for="r15">R15</label><br>
+         <input type="radio" id="r3" name="area" value="R3">
+         <label for="r3">R3</label><br>
+         <input type="radio" id="r1m" name="area" value="R1M">
+         <label for="r1m">R1M</label><br>
+         <input type="radio" id="r1" name="area" value="R1">
+         <label for="r1">R1</label>
+       <br>
+       <p>Select your area:</p>
+       <select id="Yamaha" name="bike">
+         <option value="area">Anna Nagar</option>
+         <option value="area">Arumbakkam</option>
+         <option value="area">Ambattur</option>
+         <option value="area">Kodambakkam</option>
+         <option value="area">Nungambakkam</option>
+         <option value="area">T.Nagar</option>
+         <option value="area">Guindy</option>
+         <option value="area">Tambaram</option>
+         <option value="area">Vadapalani</option>
+         <option value="area">Porur</option>
+         <option value="area">Poonamalle</option>
+         <option value="area">Royapuram</option>
+       </select>
+      <br> <br>
+      <button onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Are you sure want to book a test drive!")) {
+          txt = "You have successfully booked your test drive. We will Contact you soon!";
+        } else {
+          txt = "You have Canceled your test drive!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+         </form>
+       </div>
+     </section>
+     
+   
+  <!-- End Contact Section -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

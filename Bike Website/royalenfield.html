@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Royal Enfield</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>Royal</span>En<span>fi</span>eld</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="./Login/signin.html" data-after="Sign in">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Welcome to Bike Site <span></span></h1>
+        <a href="#testdrive" type="button" class="cta">Test Drive</a>
+        <a href="booknow.html" type="button" class="cta">Book Now</a>
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+<br>
+<br>
+ 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Royal</span>Enfield</h1>
+      </div>
+      <img src="img/Royal Enfield.png" alt="ktm" style="width:428px;height:308px;">
+
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h2>Made like a gun</h2>
+            <p>Royal enfield classic 500 is a amazing bike . Which was useful and safe riding and speed with beat sound. Royal enfield made like a gun goes like a bullet. It was used everything for long riding without any back pain.Royal Enfield Classic 500 has a 13-litre fuel tank and churns out about 32 kmpl of mileage.The 87 mph top speed means it is capable of keeping up with any and all legal traffic, but not without a few issues. Of course, that top speed is in dispute.Re classic 500 has a smooth riding experience, sleek looks and a value for money option for road trips. The servicing assistance is available almost in most remote places within India and the spare parts are easily available as well. One of the best motorcycle in the indian market .</p>
+        </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="section-title"><span>S</span>pecs</h1>
+      <table>
+        <tr>
+           <th>Mileage (City)</th>
+              <th>32kmpl</th>
+        </tr>
+        <tr>
+           <th>Engine Type</th>
+           <th>Single Cylinder, 4 stroke, Air cooled</th>
+        </tr>
+        <tr>
+           <th>Max Power</th>
+           <th>27.57 PS @ 5250 rpm</th>
+        </tr>
+        <tr>
+           <th>Front Brake, Rear Brake </th>
+           <th>Disc</th>
+        </tr>
+        <tr>
+           <th>Fuel Capacity</th>
+           <th>13.5 Ltrs</th>
+        </tr>
+        <tr>
+          <th>Displacement</th>
+          <th>Yes</th>
+        </tr>
+        <tr>
+          <th> Body Type</th>
+          <th>Cruiser Bikes </th>
+        </tr>
+     </table>
+<br> <br>
+     <section id="testdrive">
+        <h1 class="section-title"><span>Test</span>Drive</h1>
+        <div class="container4">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="lname">Mobile Number</label>
+           <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+           <label for="email">Email Address</label> <br>
+           <input type="text" id="email" name="email" placeholder="your email address">
+       <br>
+       <p>Please select your bike:</p>
+         <input type="radio" id="classic350" name="area" value="Classic350">
+         <label for="classic350">Classic350</label><br>
+         <input type="radio" id="classic500" name="area" value="Classic500">
+         <label for="classic500">Classic500</label><br>
+         <input type="radio" id="himalayan" name="area" value="Himalayan">
+         <label for="himalayan">Himalayan</label><br>
+         <input type="radio" id="continentalgt" name="area" value="ContinentalGt">
+         <label for="continentalgt">ContinentalGT</label>
+       <br>
+       <p>Select your area:</p>
+       <select id="Royalenfield" name="bike">
+         <option value="area">Anna Nagar</option>
+         <option value="area">Arumbakkam</option>
+         <option value="area">Ambattur</option>
+         <option value="area">Kodambakkam</option>
+         <option value="area">Nungambakkam</option>
+         <option value="area">T.Nagar</option>
+         <option value="area">Guindy</option>
+         <option value="area">Tambaram</option>
+         <option value="area">Vadapalani</option>
+         <option value="area">Porur</option>
+         <option value="area">Poonamalle</option>
+         <option value="area">Royapuram</option>
+       </select>
+       <label class="Check">Interested  in Finance
+        <input type="checkbox">
+        <span class="mark"></span>
+      </label>
+      <br> <br>
+      <button onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Are you sure want to book a test drive!")) {
+          txt = "You have successfully booked your test drive. We will Contact you soon!";
+        } else {
+          txt = "You have Canceled your test drive!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+         </form>
+       </div>
+     </section>
+     
+   
+  <!-- End Contact Section -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>KTM</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>k</span>T</span>M</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="./Login/signin.html" data-after="Sign in">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Welcome to KTM <span></span></h1>
+        <a href="#testdrive" type="button" class="cta">Test Drive</a>
+        <a href="booknow.html" type="button" class="cta">Book Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+<br>
+<br>
+ 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>K</span>TM</h1>
+      </div>
+      <img src="img/KTM.jpg" alt="ktm" style="width:428px;height:308px;">
+
+      <br>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h2>Ready to Race</h2>
+            <p>KTM RC 200 is equipped with the under-belly exhaust and BSIV compliance engine. It is powered by a 199.5cc liquid-cooled single-cylinder DOHC engine producing 25 hp of power at 10,000 RPM and 19.2 Nm of torque at 8,000 RPM.The revitalized RC 390 takes the lightweight supersport performance to a whole new level. Nearly every small-displacement entry-level sportbike echoes MotoGP and World Superbike inspiration in its bodywork. ... Most of the RC 390′s updates focus on handling.it's a great bike for beginners. Many people in India have a major misconception that you shouldn't begin with a higher displacement bike. The rc390 is considered to be the best bike to start with both for professional track racing as well as street driving.</p>
+        </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="section-title"><span>S</span>pecs</h1>
+      <table>
+        <tr>
+           <th>Mileage (City)</th>
+              <th>32.46 kmpl</th>
+        </tr>
+        <tr>
+           <th>Engine Type</th>
+           <th>Single Cylinder, 4 Valve, Liquid Cooled, FI, DOHC</th>
+        </tr>
+        <tr>
+           <th>Max Power</th>
+           <th>43.5 PS @ 9000 rpm</th>
+        </tr>
+        <tr>
+           <th>Front Brake, Rear Brake </th>
+           <th>Disc</th>
+        </tr>
+        <tr>
+           <th>Fuel Capacity</th>
+           <th>9.5 Ltrs</th>
+        </tr>
+        <tr>
+          <th>Displacement</th>
+          <th>373.3cc</th>
+        </tr>
+        <tr>
+          <th>Max Torque</th>
+          <th>36 Nm @ 7000 rpm</th>
+        </tr>
+     </table>
+<br> <br>
+     <section id="testdrive">
+        <h1 class="section-title"><span>Test</span>Drive</h1>
+        <div class="container4">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+           <label for="lname">Mobile Number</label>
+           <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+           <label for="email">Email Address</label> <br>
+           <input type="text" id="email" name="email" placeholder="your email address">
+       <br>
+       <p>Please select your bike:</p>
+         <input type="radio" id="duke390" name="area" value="Duke390">
+         <label for="duke390">Duke390</label><br>
+         <input type="radio" id="rc200" name="area" value="RC200">
+         <label for="rc200">RC200</label><br>
+         <input type="radio" id="rc390" name="area" value="RC390">
+         <label for="rc390">RC390</label><br>
+       <br>
+       <p>Select your area:</p>
+       <select id="Royalenfield" name="bike">
+         <option value="area">Anna Nagar</option>
+         <option value="area">Arumbakkam</option>
+         <option value="area">Ambattur</option>
+         <option value="area">Kodambakkam</option>
+         <option value="area">Nungambakkam</option>
+         <option value="area">T.Nagar</option>
+         <option value="area">Guindy</option>
+         <option value="area">Tambaram</option>
+         <option value="area">Vadapalani</option>
+         <option value="area">Porur</option>
+         <option value="area">Poonamalle</option>
+         <option value="area">Royapuram</option>
+       </select>
+       <label class="Check">Interested  in Finance
+        <input type="checkbox">
+        <span class="mark"></span>
+      </label>
+      <br> <br>
+      <button onclick="myFunction()">Submit</button>
+
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Are you sure want to book a test drive!")) {
+          txt = "You have successfully booked your test drive. We will Contact you soon!";
+        } else {
+          txt = "You have Canceled your test drive!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+         </form>
+       </div>
+     </section>
+     
+   
+  <!-- End Contact Section -->
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
